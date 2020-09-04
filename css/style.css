@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    display: grid;
+    margin-top: 12%;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects,
+main {
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: medium;
+}
+
+a {
+    color: black;
+}
+
+.skills {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.skills ul li {
+    font-size: xx-large;
+}
+
+.down {
+    margin-top: 5%;
+}
+
+#projects .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#x .col-md-6 {
+    padding-bottom: 10%;
+}
+
+#projects h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+#projects h4 {
+    font-size: 12px;
+    display: inline;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #173e43;
+    border: #173e43 1px solid;
+    border-radius: 5px;
+}
+
+#projects p {
+    padding-top: 30px;
+}
