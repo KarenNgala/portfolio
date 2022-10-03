@@ -1,0 +1,234 @@
+
+.profile img {
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.profile .bio-text {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile .bio-text .social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile .bio-text .social-media i {
+    margin: 0 10px 10px 10px;
+}
+
+.profile .bio-text .social-media i a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.tech-stack,
+.communities,
+.experience,
+.education {
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.profile .bio-text > h2,
+.tech-stack > h2,
+.projects > h2,
+.communities > h2,
+.experience > h2,
+.education > h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.profile .bio-text > span,
+.tech-stack > span,
+.projects > span,
+.communities > span,
+.experience > span,
+.education > span {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  border-bottom: 4px solid;
+  z-index: 1;
+  margin-bottom: 1.2em;
+  border-radius: 5px;
+}
+
+
+/* STACK */
+.tech-stack .stack-imgs {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.tech-stack .stack-imgs > img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+/* EDUCATION */
+.education .edu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.education .edu .course {
+    font-weight: bold;
+}
+
+.education .edu .date {
+    font-style: italic;
+}
+
+.education .edu .course i,
+.education .edu .school i,
+.education .edu .date i {
+    margin-right: 5px;
+}
+
+
+/* EXPERIENCE */
+.experience .exp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.experience .exp .role {
+    font-weight: bold;
+}
+
+.experience .exp .date {
+    font-style: italic;
+}
+
+.experience .exp .role i,
+.experience .exp .company i,
+.experience .exp .date i {
+    margin-right: 5px;
+}
+  
+
+/* PROJECTS */
+.projects {
+    /* padding: 20px; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+.projects .project-section {
+    /* padding: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.projects .project-section .content {
+    width: 350px;
+    margin: 10px;
+}
+
+.projects .background {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+}
+  
+.projects .project-section .content .top {
+    height: 180px;
+    width: 100%;
+    padding: 10px;
+    background: url("../assets/img/limelight.png");
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+  
+.projects .project-section .content .second {
+    height: 180px;
+    width: 100%;
+    padding: 10px;
+    background: url("../assets/img/native.png");
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+  
+.projects .project-section .content .third {
+    height: 180px;
+    width: 100%;
+    padding: 10px;
+    background: url("../assets/img/well-heard.png");
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+  
+.projects .project-section .content .footer {
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    /* background: #fff; */
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+}
+
+.projects .project-section .content .footer h3 {
+    margin: 0;
+}
+  
+.projects .project-section .content .footer p {
+    font-size: 12px;
+}
+  
+.projects .project-section .content .footer a {
+    align-self: flex-end;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #c9daf9, #ffefff);
+    text-decoration: none;
+}
+
+.projects .project-section .content .footer a:hover {
+    background: -webkit-linear-gradient(left, #ffefff, #c9daf9);
+}
