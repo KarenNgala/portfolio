@@ -20,36 +20,35 @@
     <script src="https://use.fontawesome.com/af96edf531.js"></script>
 </head>
 
-<body>
+<body class="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="/">
-            &lt;/&gt;
-            KAREN NGALA
+            <img src="/assets/img/profile.png" title="" alt="" width="60px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#profile">
-                  <i class="fa fa-home"></i>About
+                <a class="nav-link" href="/">
+                    home<span>.</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#education" >
-                    <i class="fa fa-graduation-cap"></i>Education
+                <a class="nav-link" href="https://github.com/KarenNgala" target="_blank">
+                    github<span>.</span>
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">
-                <i class="fa fa-briefcase"></i>Projects
+              <a class="nav-link" href="https://www.linkedin.com/in/karen-ngala" target="_blank">
+                linkedin<span>.</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://dev.to/karen_ngala" target="_blank">
-                <i class="fa fa-laptop"></i>Blog
+                dev<span>.</span>to
               </a>
             </li>
           </ul>
@@ -57,152 +56,173 @@
     </nav>
 
     <main class="container">
-        <div class="profile" id="profile">
-            <img src="assets/img/default.jpg" alt="">
-            <div class="bio-text">
-                <h2>About Me</h2><span></span>
-                <h5>Software Engineer | Building with Python</h5>
-                <p> I am a Software Engineer currently working on Web technologies using Django.
-                    I am passionate about developer communities and constantly searching for opportunities to impact lives
-                    and lifestyles through software. I find satisfaction in solving problems and working with others to 
-                    overcome challenges.</p>
-
-                <div class="social-media">
-                    <i class="fa fa-github" aria-hidden="true"><a href="https://github.com/karenngala" target="_blank"
-                            rel="noopener">GitHub</a></i>
-                    <i class="fa fa-download" aria-hidden="true"><a
-                            href="assets/doc/Karen_Ngala_resume.pdf" target="_blank"
-                            rel="noopener">Resume</a></i>
-                    <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:ngalalalu@gmail.com" target="_blank"
-                            rel="noopener">Email Me</a></i>
+        <div class="row profile min-vh-100">
+            <div class="col-md-6">
+                <div>
+                    <h1> <span class="title">Karen Ngala is</span> 
+                    <br> a Software Developer, Technical Writer and life-long learner<full-stop>.</full-stop></h1>
+                    <p>I am keen on employing technology to improve people's quality of life through
+                     <strong>collaboration</strong> of ideas and <strong>user-centered</strong> design.</p>
                 </div>
             </div>
+            <div class="col-md-6 home-image">
+                    <img src="/assets/img/photos.png" alt="">
+            </div>
         </div>
+    </main>
 
-
-        <!-- stack -->
-        <div class="tech-stack" id="tech-stack">    
-            <h2>Tech Stack</h2><span></span>
-
+    <!-- stack -->
+    <section class="tech-stack" id="tech-stack">    
+        <div class="container work">
+            <div class="row section-heading">
+                <h3>tech stack<full-stop>.</full-stop></h3> <span></span>
+            </div>
+    
             <div class="stack-imgs">
-                <img src="assets/img/html-5.png" alt="html5">
-                <img src="assets/img/css3.png" alt="css3">
                 <img src="assets/img/python.png" alt="python">
                 <img src="assets/img/django.png" alt="python-django">
                 <img src="assets/img/flask-python.png" alt="python-flask">
                 <img src="assets/img/postgreesql.png" alt="postresql">
                 <img src="assets/img/mysql.png" alt="mysql">
+                <img src="assets/img/figma.png" alt="figma">
                 <img src="assets/img/firebase.png" alt="firebase-web">
             </div>
         </div>
+    </section>
 
-
-        <!-- education -->
-        <div class="education" id="education">
-            <h2>Education</h2><span></span>
-            <div class="edu">
-                <span class="course"><i class="fa fa-book" aria-hidden="true"></i>
-                    Full-stack web specialization</span>
-                <span class="school"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    Moringa School, Ngong</span>
-                <span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                    Apr 2020 - Sept 2020</span>
-                <p class="description">My time at Moringa School taught me the value of good 
-                    teamwork, networking, coding best practices and most importantly,<br>
-                    self-management and adaptability. </p>
+    <section class="second">
+        <div class="container work">
+            <div class="row section-heading">
+                <h3>projects<full-stop>.</full-stop></h3> <span></span>
             </div>
+            <div class="row lightbox-gallery">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="portfolio-box">
+                        <div class="portfolio-image">
+                            <img class="img-thumbnail" src="/assets/img/nyumbani.png" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h6><a href="nyumbani.html" target="_blank">Nyumbani Hostels</a></h6>
+                            <p>A multi-user website that was built to allow students(tenants) to book hostels online while allowing landlords to 
+                                manage the properties they own.</p>
+                            <span class="tagging">Django</span>
+                            <span class="tagging">PostgreSQL</span>
+                            <span class="tagging">Daraja API</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="edu">
-                <span class="course"><i class="fa fa-book" aria-hidden="true"></i>
-                    BSc. Computer Science</span>
-                <span class="school"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    Moi University, Eldoret</span>
-                <span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                    Sep 2017 - PRESENT</span>
-                <p class="description">Apart from academics, I am involved in various activities including 
-                    give-back community programs and problem-solving communities <br> that seek to solve real-world 
-                    problems with user-centered solutions.</p>
-            </div>
-    
-            <div class="edu">
-                <span class="course"><i class="fa fa-book" aria-hidden="true"></i>
-                    Kenya Certificate of Secondary Education, K.C.S.E.</span>
-                <span class="school"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    Masai High School, Karen</span>
-                <span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                    Jan 2013 - Nov 2016</span>
-                <p class="description">My four years in high school solidified my foundation in computing, 
-                    introducing me to the basic, but core, concepts <br> of any programming language.</p>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="portfolio-box">
+                        <div class="portfolio-image">
+                            <img class="img-thumbnail" src="/assets/img/goldenbridge.png" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h6><a href="https://goldenbridgegirls.co.ke/" target="_blank">Golden Bridge Girls' Website</a></h6>
+                            <p>Designed and built the school website for Golden Bridge Girls' High School in Ruai. 
+                            This was a one-time project that I did while in university.
+                            </p>
+                            <p></p>
+                            <span class="tagging">HTML5</span>
+                            <span class="tagging">CSS3</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-
-        <!-- experience -->
-        <!-- <div class="experience" id="experience">
-            <h2>Experience</h2><span></span>
-    
-            <div class="exp">
-                <span class="role"><i class="fa fa-laptop" aria-hidden="true"></i>
-                    Software developer</span>
-                <span class="company"><i class="fa fa-building-o" aria-hidden="true"></i>
-                    Tradity Capital, Kenya</span>
-                <span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
-                    Nov 2020 - PRESENT</span>
-                <p class="description">
-                    Building a trading platform used by both experienced traders (signal providers) and inexperienced
-                    traders <br> to send and receive expert trading signals, respectively. <br>
-                    The platform is built on Flask python, HTML and CSS
-                </p>
+    <section class="third">
+        <div class="container work">
+            <div class="row section-heading">
+                <h3>passion work<full-stop>.</full-stop></h3> <span></span>
+                <p> Software development is a commitment to continuous learning. When I'm not coding, 
+                    <br> I'm probably dipping my toes in something new, or writing about something I learnt.
+                </strong>
+                <br> </p>
             </div>
-        </div> -->
-
-
-        <!-- projects -->
-        <div class="projects" id="projects">
-            <h2>Projects</h2><span></span>
-            <div class="project-section">
-                <div class="content">
-                    <div class="top background">
-                    </div>
-                    <div class="footer">
-                        <h3>Limelight</h3>
-                        <p>A community of like minded individuals that come together to build a platform to inspire each other 
-                            with some healthy competition. Built on <b>Firebase</b>, <b>Vanilla Js, HTML & CSS</b>.</p>
-                        <a href="https://limelight-80a7a.web.app/" target="_blank" rel="noopener">Check it out</a>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div class="second background">
-                    </div>
-                    <div class="footer">
-                        <h3>The Native</h3>
-                        <p>A fictional Canadian news website that lists and allows users to preview news articles 
-                            from various sources fetched from the News API. Built on <b>Flask</b> and <b>Heroku</b>.</p>
-                        <a href="https://native-newsapp.herokuapp.com/" target="_blank" rel="noopener">Check it out</a>
+            <br>
+            <div class="row gy-4" style="--bs-gutter-x: 1.5rem;">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-01">
+                        <div class="feature-content">
+                            <div class="number">
+                                <span>
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <a href="https://dev.to/karen_ngala/starting-a-new-django-project-with-postgresql-backend-2786" class="project-icons" target="_blank">
+                                        <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="loop" colors="primary:#ffffff,secondary:#ffc803"
+                                        style="width:60px;height:60px">
+                                        </lord-icon>  
+                                    </a>
+                                </span>
+                            </div>
+                            <h5>
+                                <a href="https://dev.to/karen_ngala/starting-a-new-django-project-with-postgresql-backend-2786" class="project-icons text-light" target="_blank">Starting a new Django project</a>
+                            </h5>
+                            <p class="desc-text">A technical article for developers wishing to start a new Django project with PostgreSQL database.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="content">
-                    <div class="third background">
-                    </div>
-                    <div class="footer">
-                        <h3>Well Heard</h3>
-                        <p>A web app with a focus on suicide prevention during the pandemic by offering online emotional support 
-                            through counselors. Built on <b>Heroku</b>, <b>Django</b> and <b>Postgres</b>.</p>
-                        <a href="https://well-heard.herokuapp.com/" target="_blank" rel="noopener">Check it out</a>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-01">
+                        <div class="feature-content">
+                            <div class="number">
+                                <span>
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <a href="https://dev.to/karen_ngala/beginner-guide-to-developer-collaboration-3n1e" class="project-icons" target="_blank">
+                                        <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="loop" colors="primary:#ffffff,secondary:#ffc803"
+                                        style="width:60px;height:60px">
+                                        </lord-icon>
+                                    </a>
+                                </span>
+                            </div>
+                            <h5>
+                                <a href="https://dev.to/karen_ngala/beginner-guide-to-developer-collaboration-3n1e" class="project-icons text-light" target="_blank">
+                                    A beginner's guide to remote collaboration
+                                </a>
+                            </h5>
+                            <p class="desc-text">A technical guide to Agile, Scrum, and software tools for developers who wish to collaborate on projects remotely.</p>
+                        </div>
                     </div>
                 </div>
 
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-01">
+                        <div class="feature-content">
+                            <div class="number">
+                                <span>
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <a href="#" class="project-icons" target="_blank">
+                                        <lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" colors="primary:#ffffff,secondary:#ffc803"
+                                        style="width:60px;height:60px">
+                                        </lord-icon>  
+                                    </a>
+                                </span>
+                            </div>
+                            <h5>
+                                <a href="#" class="project-icons text-light" target="_blank">Resume template using Figma</a>
+                            </h5>
+                            <p class="desc-text">A customizable resume template that I designed using Figma. Editable to your liking</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    
 
     <footer class="footer text-center">
-        <sup>&copy;2020 All right, wrongs and in betweens reserved</sup>
+        <sup>&copy;<span id="year"></span> All right, wrongs and in betweens reserved</sup>
     </footer>
 
 
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

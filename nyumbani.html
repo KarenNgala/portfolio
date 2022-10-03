@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Ngala</title>
+    <link rel="shortcut icon" href="assets/img/profile.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0&display=swap" rel="stylesheet">
+    <!-- frameworks -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://use.fontawesome.com/af96edf531.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/profile.png" title="" alt="" width="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    about<span>.</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/KarenNgala" target="_blank">
+                    github<span>.</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/karen-ngala" target="_blank">
+                linkedin<span>.</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://dev.to/karen_ngala" target="_blank">
+                dev<span>.</span>to
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row project-header">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">nyumbani</li>
+                </ol>
+            </nav>
+            <h1>Enabling students to book hostels online, and landlords to manage their properties.</h1>
+            <div class="col-md-4 details">
+                <h4>Platform</h4>
+                <p>Web</p>
+            </div>
+            <div class="col-md-4 details">
+                <h4>Built With</h4>
+                <p>Django, PostgreSQL, Daraja API</p>
+            </div>
+            <div class="col-md-4 details">
+                <h4>GitHub</h4>
+                <p class="text-dark"><a href="https://github.com/KarenNgala/nyumbani" target="_blank"
+                    rel="noopener"> github.com/KarenNgala/nyumbani</a></i></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Overview</h3>
+            <p>Nyumbani Hostels was a solution designed to address the hostel booking problem at universities. At Moi University,
+            a good number of students are not from Uasin Gishu County. Oftentimes, booking a hostel room meant traveling ahead of
+            time to book this room, or even organizing alternative accommodation. <br>
+            This a multi-user website that was built to allow students(tenants) to book hostels online while allowing landlords to 
+            manage the properties they owned.</p>
+        </div>
+
+        <div class="row">
+            <img src="/assets/img/nyumbani.png" alt="" width="100%" height="80%" style="border: 2px solid ;">
+        </div>
+        
+        <div class="row">
+            <h3>Features</h3>
+            <div class="col-md-12">
+                <h6><i class="fa fa-check-square-o"></i> Multi-user Authentication</h6>
+                <h6><i class="fa fa-check-square-o"></i> M-PESA Payment</h6>
+                <h6><i class="fa fa-check-square-o"></i> Multiple room types under one property/building</h6>
+                <h6><i class="fa fa-check-square-o"></i> Tenants can book rooms</h6>
+                <h6><i class="fa fa-check-square-o"></i> Tenants can leave reviews</h6>
+                <h6><i class="fa fa-check-square-o"></i> Landlords can manage vacant and occupied rooms across properties</h6>
+                <h6><i class="fa fa-check-square-o"></i> Landlords can manage their properties (CRUD operations)</h6>
+                <h6><i class="fa fa-check-square-o"></i> Landlord dashboard provides an overview of monthly earnings, number of 
+                tenants, vacant rooms, and properties.</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Entity Relationship Diagram</h3>
+            <img src="/assets/img/4thyearprojectERD.drawio (1).png" alt="">
+        </div>
+
+        <div class="row">
+            <h3>Retrospective</h3>
+            <p>The very nature of software and the design process is that it is <strong>iterative</strong>. Every time I thought, "I guess this is it, it's done!",
+                It never was. There are still a few features that need some work, like:.
+                <br>
+            </p>
+            <div class="col-md-12">
+                <h6><i class="fa fa-square-o"></i> Complete re-work of Landlord's dashboard</h6>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <sup>&copy;<span id="year"></span> All right, wrongs and in betweens reserved</sup>
+    </footer>
+
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

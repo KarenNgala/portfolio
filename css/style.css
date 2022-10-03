@@ -1,3 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/geomanist');
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/Geomanist-Black.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +17,16 @@ body {
     display: grid;
 }
 
+.body{
+    background-color: #F1F2F3;
+}
+
 main{
     margin-top: 6%;
+}
+
+h1{
+    font-family: 'Geomanist', sans-serif;
 }
 
 h2 {
@@ -20,31 +37,34 @@ h2 {
 
 h3 {
     font-family: 'Merriweather', serif;
+    padding-top: 2%;
 }
 
 h4 {
     font-size: 12px;
-    padding: 5px 10px;
-    margin-right: 5px;
-    border-radius: 5px;
+}
+
+h5{
+    font-size: 24px;
 }
 
 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
     font-size: medium;
 }
 
-a {
-    color: black;
-}
-
-a:hover {
-    color: #173e43;
+full-stop{
+    color: #FFC803;
 }
 
 
 /* NAV */
-nav{
-    background: -webkit-linear-gradient(left, #c9daf9, #ffefff);
+navbar{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav .navbar-brand{
@@ -52,7 +72,18 @@ nav .navbar-brand{
 }
 
 .nav-link{
+    color: #000000 !important; 
+    font-size: 18px;
     font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #FFC803 !important;
+}
+
+.nav-link span{
+    font-size: 20px;
+    color: #FFC803;
 }
 
 
@@ -66,14 +97,46 @@ nav .navbar-brand{
     align-items: center;
     justify-content: space-between;
 }
-  
-.profile img {
-    width: 15%;
-    height: 10%;
-    border-radius: 50%;
+ 
+.profile .title{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 25px;
+    color: gray;
 }
 
-.profile .bio-text {
+.profile h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #0b0b0b;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+ .profile p{
+    font-size: 20px;
+ }
+ .home-image{
+    text-align: center;
+ }
+
+.home-image img{
+    max-width: 110%;
+}
+
+ /* WORK */
+ .second{
+    /* background-color: #FFFFFF; */
+    padding: 3%;
+ }
+
+ .third{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 3%;
+ }
+
+ .section-heading{
     width: 80%;
     height: 100%;
     display: flex;
@@ -81,63 +144,122 @@ nav .navbar-brand{
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+ }
+
+ .section-heading h3{
+    font-size: 45px;
+    padding-bottom: 2%;
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+
+ .section-heading > span {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    border-bottom: 4px solid;
+    z-index: 1;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+  }
+
+.portfolio-box {
+    /* border: 1px solid #000000; */
+    /* outline-style: dotted; */
+    /* background: #fff; */
+    /* box-shadow: 0 0 0 0 #18171c; */
+    transition: ease all 0.35s;
+    border-radius: 8px;
 }
 
-.profile .bio-text .social-media {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.portfolio-image img{
+    max-width: 100%;
+    border-radius: 10px 10px 10px 10px;
 }
 
-.profile .bio-text .social-media i {
-    margin: 0 10px 10px 10px;
+.portfolio-box .portfolio-info {
+    padding: 20px;
+    position: relative;
+    color: #0b0b0b;
+    border-bottom: 1px solid #0b0b0b;
 }
 
-.profile .bio-text .social-media i a {
+.portfolio-box .portfolio-info p{
+    color: #495057;
+}
+
+.portfolio-box .portfolio-info a {
+    /* text-decoration: none; */
+    color: #0b0b0b;
+    border-bottom: 2px solid #FFC803;
+    font-weight: 100;
+}
+
+.portfolio-box .portfolio-info a:hover {
     text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    margin-left: 5px;
+    color: #FFC803;
+    font-weight: 100;
 }
 
-.tech-stack,
-.communities,
-.experience,
-.education {
-  padding: 20px;
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.portfolio-box .portfolio-info h6{
+    font-size: 20px;
+    color: #000000;
+    margin: 0 0 8px;
 }
 
-.profile .bio-text > h2,
-.tech-stack > h2,
-.projects > h2,
-.communities > h2,
-.experience > h2,
-.education > h2 {
-  margin-bottom: 0;
-  margin-top: 0;
+.tagging {
+    border: 0.5px solid #495057;
+    color: #495057;
+    display: inline-flex;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 0 0.8rem;
+    max-width: 100px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
 }
 
-.profile .bio-text > span,
-.tech-stack > span,
-.projects > span,
-.communities > span,
-.experience > span,
-.education > span {
-  padding: 0;
-  margin: 0;
-  width: 70px;
-  border-bottom: 4px solid;
-  z-index: 1;
-  margin-bottom: 1.2em;
-  border-radius: 5px;
+
+.breadcrumb{
+    background-color: #FFFFFF;
 }
 
+.breadcrumb-item a{
+    color: #000000;
+}
+
+.project-header h1{
+    margin-bottom: 3rem;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.details h4{
+    color: #0b0b0b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.feature-box-01{
+    padding: 40px;
+    outline-style: dotted;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    transition: ease all 0.35s;
+}
+
+footer{
+    margin-top: 5%;
+}
 
 /* STACK */
+.tech-stack{
+    background-color: #FFFFFF;
+    padding: 3%;
+}
+
 .tech-stack .stack-imgs {
     padding: 5px;
     display: flex;
@@ -151,156 +273,4 @@ nav .navbar-brand{
     width: 100px;
     height: 100px;
     margin: 10px;
-}
-
-
-/* EDUCATION */
-.education .edu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 5px;
-}
-
-.education .edu .course {
-    font-weight: bold;
-}
-
-.education .edu .date {
-    font-style: italic;
-}
-
-.education .edu .course i,
-.education .edu .school i,
-.education .edu .date i {
-    margin-right: 5px;
-}
-
-
-/* EXPERIENCE */
-.experience .exp {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 5px;
-}
-
-.experience .exp .role {
-    font-weight: bold;
-}
-
-.experience .exp .date {
-    font-style: italic;
-}
-
-.experience .exp .role i,
-.experience .exp .company i,
-.experience .exp .date i {
-    margin-right: 5px;
-}
-  
-
-/* PROJECTS */
-.projects {
-    /* padding: 20px; */
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-  
-.projects .project-section {
-    /* padding: 5px; */
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    justify-content: space-evenly;
-}
-
-.projects .project-section .content {
-    width: 350px;
-    margin: 10px;
-}
-
-.projects .background {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    cursor: pointer;
-}
-  
-.projects .project-section .content .top {
-    height: 180px;
-    width: 100%;
-    padding: 10px;
-    background: url("../assets/img/limelight.png");
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-}
-  
-.projects .project-section .content .second {
-    height: 180px;
-    width: 100%;
-    padding: 10px;
-    background: url("../assets/img/native.png");
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-}
-  
-.projects .project-section .content .third {
-    height: 180px;
-    width: 100%;
-    padding: 10px;
-    background: url("../assets/img/well-heard.png");
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-}
-  
-.projects .project-section .content .footer {
-    padding: 16px 10px;
-    display: flex;
-    flex-direction: column;
-    /* background: #fff; */
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 5px 5px;
-}
-
-.projects .project-section .content .footer h3 {
-    margin: 0;
-}
-  
-.projects .project-section .content .footer p {
-    font-size: 12px;
-}
-  
-.projects .project-section .content .footer a {
-    align-self: flex-end;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    font-size: 12px;
-    width: 40%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background: -webkit-linear-gradient(left, #c9daf9, #ffefff);
-    text-decoration: none;
-}
-
-.projects .project-section .content .footer a:hover {
-    background: -webkit-linear-gradient(left, #ffefff, #c9daf9);
-}
-
-footer{
-    margin-top: 5%;
 }
