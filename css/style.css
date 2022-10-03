@@ -250,6 +250,10 @@ nav .navbar-brand{
     transition: ease all 0.35s;
 }
 
+.passion p{
+    font-size: 18px;
+}
+
 footer{
     margin-top: 5%;
 }
