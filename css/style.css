@@ -55,8 +55,9 @@ p {
 }
 
 full-stop{
-    color: #FFC803;
+    color: #7fd4d3;
 }
+
 
 
 /* NAV */
@@ -78,18 +79,17 @@ nav .navbar-brand{
 }
 
 .nav-link:hover{
-    color: #FFC803 !important;
+    color: #7fd4d3 !important;
 }
 
 .nav-link span{
     font-size: 20px;
-    color: #FFC803;
+    color: #7fd4d3;
 }
 
 
 /* PROFILE */
 .profile {
-    padding: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -97,13 +97,12 @@ nav .navbar-brand{
     align-items: center;
     justify-content: space-between;
 }
- 
-.profile .title{
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 1.1;
-    margin: 0 0 25px;
-    color: #FFC803;
+
+.profile-image{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile h1{
@@ -124,19 +123,32 @@ nav .navbar-brand{
     max-width: 110%;
 }
 
- /* WORK */
- .second{
-    /* background-color: #FFFFFF; */
-    padding: 3%;
- }
 
- .third{
+
+/* SECTIONS */
+.first, .third{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 3%;
+}
+
+ .fourth{
     background-color: #000000;
     color: #FFFFFF;
     padding: 3%;
  }
 
- .section-heading{
+.second{
+    background-color: #000000;
+    padding: 3%;
+    color: #7fd4d3;
+}
+
+.second full-stop{
+    color: #FFFFFF;
+}
+
+.section-heading{
     width: 80%;
     height: 100%;
     display: flex;
@@ -163,13 +175,30 @@ nav .navbar-brand{
     border-radius: 5px;
   }
 
-.portfolio-box {
-    /* border: 1px solid #000000; */
-    /* outline-style: dotted; */
-    /* background: #fff; */
-    /* box-shadow: 0 0 0 0 #18171c; */
+
+
+/* EXPERIENCE */
+
+
+.experience-img img{
+    max-width: 50px;
+    border-radius: 6px;
+}
+
+.experience-content h5 {
+    color: #7F9CAB;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.spaced {
+    padding-bottom: 20px;
+}
+
+/* WORK */
+.portfolio-box{
     transition: ease all 0.35s;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .portfolio-image img{
@@ -180,24 +209,22 @@ nav .navbar-brand{
 .portfolio-box .portfolio-info {
     padding: 20px;
     position: relative;
-    color: #0b0b0b;
-    border-bottom: 1px solid #0b0b0b;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .portfolio-box .portfolio-info p{
-    color: #495057;
+    color: #FFFFFF;
 }
 
 .portfolio-box .portfolio-info a {
-    /* text-decoration: none; */
-    color: #0b0b0b;
-    border-bottom: 2px solid #FFC803;
-    font-weight: 100;
+    color: #FFFFFF;
+    font-weight:bold;
 }
 
 .portfolio-box .portfolio-info a:hover {
     text-decoration: none;
-    color: #FFC803;
+    color: #7fd4d3;
     font-weight: 100;
 }
 
@@ -209,7 +236,7 @@ nav .navbar-brand{
 
 .tagging {
     border: 0.5px solid #495057;
-    color: #495057;
+    color: whitesmoke;
     display: inline-flex;
     border-radius: 15px;
     font-size: 12px;
@@ -219,6 +246,50 @@ nav .navbar-brand{
     height: 24px;
     line-height: 24px;
 }
+
+.passion p{
+    font-size: 18px;
+}
+
+.feature-box-01 {
+    padding: 40px;
+    outline-style: dotted;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    transition: ease all 0.35s;
+}
+
+.tagged-w-icon {
+    color: #7F9CAB;
+    font-size: 13px;
+    border-radius: 15px;
+    line-height: 26px;
+    height: 24px;
+    margin-bottom: 14px;
+}
+
+/* .tech-stack .stack-imgs {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.tech-stack .stack-imgs > img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+} */
+
+
+/*  */
+
+
+
+
 
 
 .breadcrumb{
@@ -241,40 +312,7 @@ nav .navbar-brand{
     font-weight: 600;
 }
 
-.feature-box-01{
-    padding: 40px;
-    outline-style: dotted;
-    color: #fff;
-    border-radius: 8px;
-    border: 1px solid #ffffff;
-    transition: ease all 0.35s;
-}
-
-.passion p{
-    font-size: 18px;
-}
 
 footer{
-    margin-top: 5%;
-}
-
-/* STACK */
-.tech-stack{
-    background-color: #FFFFFF;
-    padding: 3%;
-}
-
-.tech-stack .stack-imgs {
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-  
-.tech-stack .stack-imgs > img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    margin-top: 1%;
 }
