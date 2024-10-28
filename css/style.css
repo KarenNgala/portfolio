@@ -18,7 +18,7 @@ body {
 }
 
 .body{
-    background-color: #F1F2F3;
+    background-color: #FFFFFF;
 }
 
 main{
@@ -126,7 +126,6 @@ nav .navbar-brand{
 
  /* WORK */
  .second{
-    /* background-color: #FFFFFF; */
     padding: 3%;
  }
 
@@ -256,25 +255,4 @@ nav .navbar-brand{
 
 footer{
     margin-top: 5%;
-}
-
-/* STACK */
-.tech-stack{
-    background-color: #FFFFFF;
-    padding: 3%;
-}
-
-.tech-stack .stack-imgs {
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-  
-.tech-stack .stack-imgs > img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
 }
